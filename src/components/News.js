@@ -65,7 +65,7 @@ export class News extends Component {
   //     this.props.country
   //   }&category=${
   //     this.props.category
-  //   }&apiKey=76854da229024026858d00c2198aa19a&page=${
+  //   }&apiKey=${this.props.apiKey}&page=${
   //     this.state.page - 1
   //   }&pageSize=${this.props.pageSize}`;
   //   this.setState({ loading: true });
@@ -92,7 +92,7 @@ export class News extends Component {
   //       this.props.country
   //     }&category=${
   //       this.props.category
-  //     }&apiKey=76854da229024026858d00c2198aa19a&page=${
+  //     }&apiKey=${this.props.apiKey}&page=${
   //       this.state.page + 1
   //     }&pageSize=${this.props.pageSize}`;
   //     this.setState({ loading: true });

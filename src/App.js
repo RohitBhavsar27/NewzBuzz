@@ -2,8 +2,8 @@ import "./App.css";
 import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 export default class App extends Component {
   pageSize = 9;
@@ -19,7 +19,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Router>
+        <HashRouter>
           <Navbar />
           <LoadingBar
             height={3}
@@ -140,7 +140,7 @@ export default class App extends Component {
               }
             />
           </Routes>
-        </Router>
+        </HashRouter>
       </div>
     );
   }
